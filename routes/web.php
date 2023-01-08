@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\MyController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -12,7 +12,18 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+// Frontend  route
 Route::get('/', function () {
-    return view('welcome');
+    return view('frontend/home/home');
 });
+
+Route::get('/naim', function () {
+    return view('hello_page');
+})->name('hello');
+
+Route::get('/login/user',[MyController::class,'showLogin'])->name('login');
+
+
+Route::get('/naim/id/hello', function () {
+    echo "This is webpage";
+})->name('naim_page');
