@@ -4,7 +4,7 @@
                     <div class="col-8">
                         <div class="section-heading text-center mx-xxl-4 mx-lg-0 mx-sm-3">
                             <h2 class="text-secondary bg-white">
-                                Popular Job Categories                            </h2>
+                                Available Job Categories                            </h2>
                         </div>
                     </div>
                 </div>
@@ -14,7 +14,7 @@
                                 <div class="card py-30">
                                     <div class="row align-items-center">
                                         <div class="col-3">
-                                            <img src="./Home _ InfyOmLabs_files/job-categories.png" class="card-img" alt="...">
+                                            <img src="{{asset('style//job-categories.png')}}" class="card-img" alt="...">
                                         </div>
                                         <div class="col-8">
                                             <div class="card-body ps-xl-0 ps-lg-3">

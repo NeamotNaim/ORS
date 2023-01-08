@@ -1,10 +1,17 @@
+<style>
+    .header_logo{
+       width: 60px !important;
+       height: 60px !important;
+       border-radius: 6px !important;
+    }
+</style>
 <header class="bg-light">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-1 col-4">
                 {{-- "{{asset('style/')}}" --}}
                 <a href="http://127.0.0.1:8080/" class="header-logo" >
-                    <img src="{{asset('style/logo.png')}}" alt="Jobs" class="img-fluid" style="border-radius:2px !important" >
+                    <img src="{{asset('style/logo.png')}}" alt="Jobs" class="img-fluid header_logo"  >
                 </a>
             </div>
             <div class="col-lg-11 col-8">

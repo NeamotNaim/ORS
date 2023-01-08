@@ -54,7 +54,5 @@
     </div>
 
     
-    <input id="createNewLetterUrl" name="createNewLetterUrl" type="hidden" value="http://127.0.0.1:8080/news-letter">
-    <script data-turbo-eval="false">
-        let defaultCountryCodeValue = "in"
-    </script>
+    
+    

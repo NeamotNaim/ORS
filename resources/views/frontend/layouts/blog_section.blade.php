@@ -14,7 +14,7 @@
                                 <div class="card">
                                     <div class="card-img-top position-relative">
                                         <div class="inner-image">
-                                            <img src="./Home _ InfyOmLabs_files/blog-1.png" class="card-img-top" alt="Employee Motivation">
+                                            <img src="{{asset('style//blog-1.png')}}" class="card-img-top" alt="Employee Motivation">
                                         </div>
                                         <div class="overlay position-absolute">
                                             <a href="http://127.0.0.1:8080/posts/details/1" class="btn text-white fs-16">
@@ -41,7 +41,7 @@
                                 <div class="card">
                                     <div class="card-img-top position-relative">
                                         <div class="inner-image">
-                                            <img src="./Home _ InfyOmLabs_files/blog-1.png" class="card-img-top" alt="Employee Motivation">
+                                            <img src="{{asset('style/blog-1.png')}}" class="card-img-top" alt="Employee Motivation">
                                         </div>
                                         <div class="overlay position-absolute">
                                             <a href="http://127.0.0.1:8080/posts/details/2" class="btn text-white fs-16">
@@ -68,7 +68,7 @@
                                 <div class="card">
                                     <div class="card-img-top position-relative">
                                         <div class="inner-image">
-                                            <img src="./Home _ InfyOmLabs_files/blog-1.png" class="card-img-top" alt="Employee Motivation">
+                                            <img src="{{asset('style/blog-1.png')}}" class="card-img-top" alt="Employee Motivation">
                                         </div>
                                         <div class="overlay position-absolute">
                                             <a href="http://127.0.0.1:8080/posts/details/3" class="btn text-white fs-16">
