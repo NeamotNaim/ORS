@@ -26,6 +26,10 @@ Route::get('/contact', function () {
     return view('frontend/contact/contact');
 })->name('contact');
 
+Route::get('/jobs', function () {
+    return view('frontend/jobs/index');
+})->name('jobs');
+
 
 Route::get('/login/user',[MyController::class,'showLogin'])->name('login');
 

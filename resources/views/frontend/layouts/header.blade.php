@@ -22,10 +22,10 @@
                     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                         <ul class="navbar-nav align-items-center py-2 py-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="{{route('/')}}">Home</a>
+                                <a class="nav-link active" aria-current="page" href="{{url('/')}}">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link " href="http://127.0.0.1:8080/search-jobs">Jobs</a>
+                                <a class="nav-link " href="{{route('jobs')}}">Jobs</a>
                             </li>
                             
                                                         <li class="nav-item">
