@@ -61,7 +61,7 @@ require __DIR__.'/auth.php';
 // require __DIR__.'/auth.php';
 
 // here admin/login cannot redirect to admin dashboard
-// Route::get('/admin/login',[AdminController::class,'index'])->name('admin.login'); down for above issue
+ Route::get('/admin/login',[AdminController::class,'index'])->name('admin.login'); //down for above issue
 
 Route::get('/admin', function () {
     return view('admin.index');
