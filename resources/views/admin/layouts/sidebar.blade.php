@@ -109,7 +109,7 @@
                         </li>
                         <li class="nav-item ">
                             <a class="nav-link d-flex align-items-center py-3" aria-current="page"
-                                href="http://127.0.0.1:8080/admin/jobs">
+                                href="{{route('admin.jobs')}}">
                                 <span class="aside-menu-icon pe-3"><svg class="svg-inline--fa fa-briefcase"
                                         aria-hidden="true" focusable="false" data-prefix="fas" data-icon="briefcase"
                                         role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
@@ -119,6 +119,28 @@
                                         </path>
                                     </svg><!-- <i class="fas fa-briefcase"></i> Font Awesome fontawesome.com --></span>
                                 <span class="aside-menu-title">Jobs</span>
+                                <span class="d-none">Jobs</span>
+                                <span class="d-none">Job Categories</span>
+                                <span class="d-none">Job Types</span>
+                                <span class="d-none">Job Tags</span>
+                                <span class="d-none">Job Shifts</span>
+                                <span class="d-none">Reported Jobs</span>
+                                <span class="d-none">Job Notifications</span>
+                                <span class="d-none">Expired Jobs</span>
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link d-flex align-items-center py-3" aria-current="page"
+                                href="{{route('admin.jobs.category')}}">
+                                <span class="aside-menu-icon pe-3"><svg class="svg-inline--fa fa-briefcase"
+                                        aria-hidden="true" focusable="false" data-prefix="fas" data-icon="briefcase"
+                                        role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                                        data-fa-i2svg="">
+                                        <path fill="currentColor"
+                                            d="M320 336c0 8.844-7.156 16-16 16h-96C199.2 352 192 344.8 192 336V288H0v144C0 457.6 22.41 480 48 480h416c25.59 0 48-22.41 48-48V288h-192V336zM464 96H384V48C384 22.41 361.6 0 336 0h-160C150.4 0 128 22.41 128 48V96H48C22.41 96 0 118.4 0 144V256h512V144C512 118.4 489.6 96 464 96zM336 96h-160V48h160V96z">
+                                        </path>
+                                    </svg><!-- <i class="fas fa-briefcase"></i> Font Awesome fontawesome.com --></span>
+                                <span class="aside-menu-title">Job Category</span>
                                 <span class="d-none">Jobs</span>
                                 <span class="d-none">Job Categories</span>
                                 <span class="d-none">Job Types</span>

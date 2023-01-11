@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MyController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\JobController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -73,15 +74,19 @@ require __DIR__.'/auth.php';
 
 
 
-Route::middleware(['auth', 'verified','role:admin'])->prefix('admin')->group(function () {
+Route::middleware(['auth', 'verified','role:admin'])->prefix('admin')->name('admin.')->group(function () {
+
     Route::get('/home', function () {
          return "hello";
     });
+
    Route::get('/logout', function(){
    Auth::logout();
    return Redirect::to('/');
     });
-    Route::get('/user/profile', function () {
-        // Uses first & second middleware...
-    });
+
+    Route::get('/jobs',[JobController::class,'index'])->name('jobs');
+    Route::get('/jobs/category',[JobController::class,'category'])->name('jobs.category');
+    Route::get('/jobs/category/create',[JobController::class,'category_create'])->name('jobs.category.create');
+    Route::post('/jobs/category/create',[JobController::class,'category_store'])->name('job.category.store');
 });

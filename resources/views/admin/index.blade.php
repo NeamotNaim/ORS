@@ -264,7 +264,7 @@
                       </div>
                     </div>
                     
-                    
+                    job
 
                     <!-- recent registered candidates starts -->
                     <div class="col-xxl-6 col-12 mb-7">
